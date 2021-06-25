@@ -1,0 +1,25 @@
+?- list_member(a, [b, c, d, e, f]).
+false.
+
+?- list_member(X, [1, 2, 3, 4, 5]).
+X = 1 ;
+X = 2 ;
+X = 3 ;
+X = 4 ;
+X = 5 ;
+false.
+
+?- list_length([1, 2, 3, 4, 5], X).
+X = 5.
+
+?- list_length([], X).
+X = 0.
+
+?- concatenation([], [1, 2, 3], L).
+L = [1, 2, 3].
+
+?- concatenation([a, b], [1, 2, 3], R).
+R = [a, b, 1, 2, 3].
+
+?- concatenation([a, b], L, [a, b, c, 1, 2, 3, 4]).
+L = [c, 1, 2, 3, 4].
