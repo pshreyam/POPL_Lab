@@ -3,7 +3,7 @@
 add(X, Y, R):-
     R is X + Y.
 
-substract(X, Y, R):-
+subtract(X, Y, R):-
     R is X - Y.
 
 multiply(X, Y, R):-
